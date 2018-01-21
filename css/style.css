@@ -1,0 +1,66 @@
+/* Estilo del color de fondo de la pagina */
+body{
+  background-color: #ef8426;
+}
+/* Estilos de la primer vista */
+.background-load{
+  background-image: url(../assets/images/comida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+}
+/* Estilo del titulo food map */
+.style-title{
+  color: #e2d02b;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 35vh;
+}
+/* Estilo del mapa */
+.style-map{
+  width: 100%;
+  height: 50vh;
+}
+/* Estilo del segundo titulo*/
+.style-title-second{
+  color: #e2d02b;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4em;
+}
+/* Estilo del titulo tu comida cerca de ti */
+.style-title-third{
+  color: #e2d02b;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-top: 3vh;
+  text-align: center;
+  font-size: 2.5em;
+}
+/* Estilo del titulo de la comida */
+.style-first-restaurant{
+  background-color: #ef8426;
+  color: #e2d02b;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+}
+/* Estilo del mapa del modal */
+.map{
+  margin: 0 auto;
+  height: 60vh;
+  width: 100%;
+}
+/* estilo de las imagenes de la comida */
+.style-img{
+  background-color: #ef8426;
+  border: none;
+}
+.hidden{
+  display: none;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1">
+    <title>FoodMap</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/carrusel.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section id="load" class="container-fluid">
+      <div class="row background-load">
+        <div class="col-md-12 col-xs-12 style-title">
+          <p>Food Map</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="loadTwo" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 style-title-second">
+          <p>Food Map</p>
+        </div>
+        <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15050.735241561906!2d-99.16222135!3d19.42606295!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1516401479260" class="style-map" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="hidden-xs hidden-sm col-lg-4 col-lg-push-4 col-lg-pull-4 col-md-4 col-md-push-4 col-md-pull-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15050.735241561906!2d-99.16222135!3d19.42606295!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1516401479260" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 style-title-third">
+          <p>Comida cerca de ti</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-push-1 col-lg-pull-1 col-lg-10 col-md-push-1 col-md-pull-1 col-md-10 col-sm-push-1 col-sm-pull-1 col-sm-10 col-xs-push-1 col-xs-pull-1 col-xs-10">
+            <div class="input-group">
+              <input type="text" id="searcher" class="form-control" placeholder="Escribe tu comida.. Comida Mediterránea">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div>
+    </section>
+
+    <section id="food" class="container-fluid">
+
+    </section>
+
+    <section id="chinese_food" class="container-fluid hidden">
+      <div class="row style-first-restaurant">
+        <div class="col-lg-push-1 col-lg-pull-1 col-lg-10 col-xs-push-1 col-xs-pull-1 col-xs-10">
+          <p>  Comida China </p>
+          <a href="#ventana1"  data-toggle="modal" class="thumbnail style-img">
+            <img src="assets/images/china.jpg" alt="...">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="italian_food" class="container-fluid hidden">
+      <div class="row style-first-restaurant">
+        <div class="col-lg-push-1 col-lg-pull-1 col-lg-10 col-xs-push-1 col-xs-pull-1 col-xs-10">
+          <p>  Comida Italiana </p>
+          <a href="#ventana2"  data-toggle="modal" class="thumbnail style-img">
+            <img src="assets/images/italiana.jpg" alt="...">
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="med_food" class="container-fluid hidden">
+      <div class="row style-first-restaurant">
+        <div class="col-lg-push-1 col-lg-pull-1 col-lg-10 col-xs-push-1 col-xs-pull-1 col-xs-10">
+          <p>  Comida Mediterránea </p>
+          <a href="#ventana3"  data-toggle="modal" class="thumbnail style-img">
+            <img src="assets/images/mediterránea.jpg" alt="...">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mexican_food" class="container-fluid hidden">
+      <div class="row style-first-restaurant">
+        <div class="col-lg-push-1 col-lg-pull-1 col-lg-10 col-xs-push-1 col-xs-pull-1 col-xs-10">
+          <p>  Comida Mexicana </p>
+          <a href="#ventana4"  data-toggle="modal" class="thumbnail style-img">
+            <img src="assets/images/mexicana.jpg" alt="...">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="japaneese_food" class="container-fluid hidden">
+      <div class="row style-first-restaurant">
+        <div class="col-lg-push-1 col-lg-pull-1 col-lg-10 col-xs-push-1 col-xs-pull-1 col-xs-10">
+          <p>  Comida Japonesa </p>
+          <a href="#ventana5"  data-toggle="modal" class="thumbnail style-img">
+            <img src="assets/images/japonesa.jpg" alt="...">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="ventana1" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">CHINATOWN</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/images/mapa-restaurante.jpg" alt="">
+            <p>Calle Oriente #122 Col. Barrio Chino</p>
+            <p>Rango de precios <span>$$</span></p>
+            <p>Servicio a Domicilio</p>
+            <p>Tel:11-22-33-44-55</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Pedir ahora</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="ventana2" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Italinni´s</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/images/mapa-restaurante.jpg" alt="">
+            <p>Calle Bulair #12 Col. Amourj</p>
+            <p>Rango de precios <span>$$$</span></p>
+            <p>Servicio a Domicilio</p>
+            <p>Tel:03-13-20-04-15</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Pedir ahora</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="ventana3" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Mediterránea</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/images/mapa-restaurante.jpg" alt="">
+            <p>Calle Claveles #680 Col. Centro</p>
+            <p>Rango de precios <span>$$$$</span></p>
+            <p>Servicio a Domicilio</p>
+            <p>Tel:23-84-13-24-16</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Pedir ahora</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="ventana4" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Mexicanisimo</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/images/mapa-restaurante.jpg" alt="">
+            <p>Calle Central #1500 Col. Centro</p>
+            <p>Rango de precios <span>$$</span></p>
+            <p>Servicio a Domicilio</p>
+            <p>Tel:99-88-77-66-66</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Pedir ahora</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="ventana5" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Japaneese</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/images/mapa-restaurante.jpg" alt="">
+            <p>Calle Plata #1 Col. Moderna</p>
+            <p>Rango de precios <span>$$$</span></p>
+            <p>Servicio a Domicilio</p>
+            <p>Tel:11-22-33-44-55</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Pedir ahora</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+  </body>
+</html>
