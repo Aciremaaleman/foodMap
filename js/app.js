@@ -14,9 +14,9 @@ $(document).ready(function() { //inicializas el documento html con jquery
   };
 
   function compare(search) {
-    var result = restaurants.filter(function(rest){
+    var result = restaurants.filter(rest);
       return rest.restaurants == search;
-    });
+    };
       console.log(result);
       paint(result);
     };
