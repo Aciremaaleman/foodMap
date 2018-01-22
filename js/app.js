@@ -1,21 +1,29 @@
 $(document).ready(function(loadPage){
-  $(".form-control").keyup(getInput);
-});
+  $("#searcher").keyup(getInput);
   
+});
+
   function getInput(){
-    var search = $(".form-control").val().toLowerCase();
-   
-    if($(".form-control").val().trim().lenght > 0){
+    var search = $("#searcher").val().toLowerCase();
+    console.log(search);
+
+    
+    
+    if($("#searcher").val().trim().length > 0){
       for(var i = 0; i > restaurants.length; i++){
         var indiceRestaurant = restaurants[i];
         console.log(indiceRestaurant);
       };
       var filteredRestaurants = restaurants.filter(function(indiceRestaurant){
-        return indiceRestaurant.food.toLowerCase().indexOf(search) >= 0;
-        console.log(filteredRestaurants);
+        return indiceRestaurant.food.toLowerCase().indexOf(search) >=0;
       });
+      console.log(filteredRestaurants);
+    
     };
   };
+    
+
+
 
 
 

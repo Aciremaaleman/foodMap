@@ -1,13 +1,13 @@
 var restaurants = [
     chinese = { 
-      food:'Comida China'},
+      'food':'Comida China'},
     mexican = {
-      food:'Comida Mexicana'},
+      'food':'Comida Mexicana'},
     italian =  {
-      food:'Comida Italiana'},
+      'food':'Comida Italiana'},
     española =   {
-      food:'Comida Mediterranea'},
+     'food':'Comida Mediterranea'},
     japonesa =  {
-      food:'Comida japonesa'}]
+      'food':'Comida japonesa'}]
   
   console.log(restaurants);
