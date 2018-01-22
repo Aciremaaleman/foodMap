@@ -1,8 +1,8 @@
-var restaurants = ['Comida China',
-                   'Comida Mexicana',
-                   'Comida Italiana',
-                   'Comida Mediterránea',
-                   'Comida Japonesa']
+var restaurants = [{food:'Comida China'},
+                   {food:'Comida Mexicana'},
+                   {food:'Comida Italiana'},
+                   {food:'Mediterranea'},
+                   {food:'japonesa'}]
 
 //inicializas el documento html con jquery
 $(document).ready(function(){
@@ -21,12 +21,21 @@ $(document).ready(function(){
   // Se inicializa función compare para comparar el resultado de la función anterior con la data
   function compare(search) {
     var result = restaurants.filter(function(rest){
-      return rest.restaurants == search;
+      if (rest.food == search) {
+         return restaurants.food.toLowerCase().indexOf(search) >= 0;
+      }
+      // paint(result);
     });
     console.log(result);
-  //     rest(result);
  };
-  //
+
+ // function paint(result){
+ //   if (result ==  ) {
+ //       return contact.name.toLowerCase().indexOf(searchContact) >= 0;
+ //
+ //   }
+ // }
+
   // function rest(result){
   //   if (compare == 'comida china'){
   //     return $("#chinese_food").css('display','block');
