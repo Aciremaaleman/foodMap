@@ -1,33 +1,53 @@
-var restaurants = [{food:'Comida China'},
-                   {food:'Comida Mexicana'},
-                   {food:'Comida Italiana'},
-                   {food:'Mediterranea'},
-                   {food:'japonesa'}]
+var restaurants = [
+  chinese = { 
+    food:'Comida China'},
+  mexican = {
+    food:'Comida Mexicana'},
+  italian =  {
+    food:'Comida Italiana'},
+  española =   {
+    food:'Comida Mediterranea'},
+  japonesa =  {
+    food:'Comida japonesa'}]
 
-//inicializas el documento html con jquery
-$(document).ready(function(){
-  //invocas el id del input utilizando el metodo keyup y que se le aplique la funcion
+console.log(restaurants);
+
+$(document).ready(function(loadPage){
   $("#searcher").keyup(getInput);
-  //código a ejecutar
-  // inicias la funcion para filtrar el input
+});
+  
   function getInput(){
-    // se declara una variable que sera igual al input
-    // utilizando metodos para obtner el valor, que sean siempre minusculas y no tome en cuneta espacios
-    var search = $("#searcher").val().toLowerCase().trim();
-    //te consolea el valor del input
-    console.log(search);
-    compare(search);
+    var search = $("#searcher").val().toLowerCase();
+   
+    if($("#searcher").val().trim().lenght > 0){
+      for(var i = 0; i > restaurants.length; i++){
+        var indiceRestaurant = restaurants[i];
+      };
+      var filteredRestaurants = restaurants.filter(function(indiceRestaurant){
+        return indiceRestaurant.food.toLowerCase().indexOf(search) >= 0;
+      });
+    };
+    console.log(indiceRestaurant);
+    console.log(filteredRestaurants);
   };
-  // Se inicializa función compare para comparar el resultado de la función anterior con la data
-  function compare(search) {
-    var result = restaurants.filter(function(rest){
-      if (rest.food == search) {
-         return restaurants.food.toLowerCase().indexOf(search) >= 0;
-      }
-      // paint(result);
-    });
-    console.log(result);
- };
+
+
+
+    //te consolea el valor del input
+  
+//     compare(search);
+//   };
+//   // Se inicializa función compare para comparar el resultado de la función anterior con la data
+//   function compare(search) {
+//     var result = restaurants.filter(function(rest){
+//       for()
+//       // if (rest.food == search) {
+//       //    return restaurants.food.toLowerCase().indexOf(search) >= 0;
+//       // }
+//       // paint(result);
+//     });
+//     console.log(result);
+//  };
 
  // function paint(result){
  //   if (result ==  ) {
@@ -42,10 +62,6 @@ $(document).ready(function(){
   //   };
   // };
   // console.log(rest());
-});
-
-
-
 
 //cosas que ya hice y no me funcionaron las comento para que no se me olvide
   // function compare(search){
@@ -83,3 +99,5 @@ $(document).ready(function(){
 //   }
 // }
 //
+
+//inicializas el documento html con jquery
