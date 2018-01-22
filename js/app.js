@@ -1,34 +1,20 @@
-var restaurants = [
-  chinese = { 
-    food:'Comida China'},
-  mexican = {
-    food:'Comida Mexicana'},
-  italian =  {
-    food:'Comida Italiana'},
-  española =   {
-    food:'Comida Mediterranea'},
-  japonesa =  {
-    food:'Comida japonesa'}]
-
-console.log(restaurants);
-
 $(document).ready(function(loadPage){
-  $("#searcher").keyup(getInput);
+  $(".form-control").keyup(getInput);
 });
   
   function getInput(){
-    var search = $("#searcher").val().toLowerCase();
+    var search = $(".form-control").val().toLowerCase();
    
-    if($("#searcher").val().trim().lenght > 0){
+    if($(".form-control").val().trim().lenght > 0){
       for(var i = 0; i > restaurants.length; i++){
         var indiceRestaurant = restaurants[i];
+        console.log(indiceRestaurant);
       };
       var filteredRestaurants = restaurants.filter(function(indiceRestaurant){
         return indiceRestaurant.food.toLowerCase().indexOf(search) >= 0;
+        console.log(filteredRestaurants);
       });
     };
-    console.log(indiceRestaurant);
-    console.log(filteredRestaurants);
   };
 
 

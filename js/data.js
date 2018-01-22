@@ -1,7 +1,13 @@
-// var restaurante = {
-//   restaurantes: 'Comida China',
-//   // restaurant: ['Comida Mexicana'],
-//   // restaurant: ['Comida Italiana'],
-//   // restaurant: ['Comida Mediterránea'],
-//   // restaurant: ['Comida Japonesa']
-// }
+var restaurants = [
+    chinese = { 
+      food:'Comida China'},
+    mexican = {
+      food:'Comida Mexicana'},
+    italian =  {
+      food:'Comida Italiana'},
+    española =   {
+      food:'Comida Mediterranea'},
+    japonesa =  {
+      food:'Comida japonesa'}]
+  
+  console.log(restaurants);
