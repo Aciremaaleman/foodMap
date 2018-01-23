@@ -60,6 +60,9 @@ body{
 .style-img{
   background-color: #ef8426;
   border: none;
+  margin-left: 5vh;
+  height: 50vh;
+  width: 60vh;
 }
 .hide{
   display: none;
