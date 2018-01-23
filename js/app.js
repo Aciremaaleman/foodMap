@@ -21,22 +21,22 @@ $(document).ready(function(loadPage){
         filteredRestaurants.forEach(function(indiceRestaurant) {
             paint(indiceRestaurant);
         });
-      console.log(filteredRestaurants);
     };
   };
 
   var paint = function(indiceRestaurant){
-    // var $container = $("<div />", {"class": "row"});
     var $container = $("<div />");
     var $title = $("<p />", {"src":indiceRestaurant.title, "class": "style-first-restaurant"});
     var $img = $("<img />", {"src":indiceRestaurant.photo, "class": "style-img"});
-    // var $modal = $("modal" {"class":"modal fade", "id":"ventana1"})
 
     $title.append(indiceRestaurant.title);
     $img.append(indiceRestaurant.photo);
-    // $container.append($containerCol);
     $container.append($title);
     $container.append($img);
-    // $container.append($containerCol);
     $("#food").prepend($container);
+
   }
+
+  // var clean = function(){
+  //     $("#food").val("");
+  // }

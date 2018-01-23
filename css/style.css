@@ -61,9 +61,36 @@ body{
   background-color: #ef8426;
   border: none;
   margin-left: 5vh;
+  margin: 0 auto;
   height: 50vh;
   width: 60vh;
 }
-.hide{
+/* .hide{
   display: none;
+} */
+
+#ventana1 > div > div > div.modal-header{
+  background-color: #ef8426;
+  font-size: 4em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#ventana1 > div > div > div.modal-body{
+  background-color:#ffd789;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+#ventana1 > div > div > div.modal-body > img{
+  margin: 0 auto;
+}
+#ventana1 > div > div > div.modal-footer{
+  background-color: #ef8426;
+}
+#ventana1 > div > div > div.modal-footer > button{
+  background-color:#ffd789;
+  border: none;
+
 }
